@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://harsh2002-hub.github.io/EcommerceClient",
+  "homepage": "https://github.com/harsh2002-hub/Shoppingo",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/data-grid": "^4.0.0-alpha.37",
