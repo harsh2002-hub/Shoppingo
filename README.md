@@ -1,0 +1,1 @@
+# shoppingo-frontend
