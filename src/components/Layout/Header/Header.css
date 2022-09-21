@@ -1,0 +1,23 @@
+.icons{
+    position: absolute;
+    right: 4%;
+    width:120px;
+
+}
+.icon--search, .icon--login{
+    color:white;
+   padding-left: 10px;
+   font-size: 40px;
+
+}
+.speedDial {
+    position: fixed;
+    right: 3vmax;
+    top: 3vmax;
+  }
+  
+  .speedDialIcon {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+  }
