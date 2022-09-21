@@ -1,29 +1,46 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import { composeWithDevTools } from "redux-devtools-extension"
-import { productDetailsReducer, productReducer } from "./reducers/productReducer";
-import { updatePassword, userLoginReducer, userUpdateReducer } from "./reducers/userReducer";
+import { composeWithDevTools } from "redux-devtools-extension";
+import { productDetailsReducer, productsReducer } from "./reducers/productReducers";
+import {userReducer} from "./reducers/userReducers"
+const reducer = combineReducers({
+    products: productsReducer,
+    productDetails: productDetailsReducer,
+    user: userReducer,
+    // profile: profileReducer,
+    // forgotPassword: forgotPasswordReducer,
+    // cart: cartReducer,
+    // newOrder: newOrderReducer,
+    // myOrders: myOrdersReducer,
+    // orderDetails: orderDetailsReducer,
+    // newReview: newReviewReducer,
+    // newProduct: newProductReducer,
+    // product: productReducer,
+    // allOrders: allOrdersReducer,
+    // order: orderReducer,
+    // allUsers: allUsersReducer,
+    // userDetails: userDetailsReducer,
+    // productReviews: productReviewsReducer,
+    // review: reviewReducer,
+  });
 
+  let initialState = {
+    cart: {
+      cartItems: localStorage.getItem("cartItems")
+        ? JSON.parse(localStorage.getItem("cartItems"))
+        : [],
+      shippingInfo: localStorage.getItem("shippingInfo")
+        ? JSON.parse(localStorage.getItem("shippingInfo"))
+        : {},
+    },
+  };
 
-
-
-let initialState = {};
-  
   const middleware = [thunk];
 
-const reducer = combineReducers({
-   productsArray:productReducer,
-   productDetails:productDetailsReducer,
-   user:userLoginReducer,
-   profile:userUpdateReducer,
-   forgotPassword:updatePassword
-});
-
-const store = createStore(
+  const store = createStore(
     reducer,
     initialState,
     composeWithDevTools(applyMiddleware(...middleware))
-
   );
-
- export default store; 
+  
+  export default store;
