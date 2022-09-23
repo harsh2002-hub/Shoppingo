@@ -39,6 +39,7 @@ function App() {
     <Route  path="/products/:keyword" element={<Products/>} />
     <Route  exact path="/search" element={<Search/>} />
     <Route  exact path="/login" element={<LoginSignUp/>}/>
+    <Route exact path="*" element={<Home/>}></Route>
     </Routes>
     <Footer></Footer>
   </Router>
