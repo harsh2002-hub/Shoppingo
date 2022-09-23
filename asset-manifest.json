@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8250132d.css",
-    "main.js": "/static/js/main.64dcbb6b.js",
-    "static/media/cover.jfif": "/static/media/cover.e2edeab17643ab2951c0.jfif",
-    "static/media/Profile.png": "/static/media/Profile.697fdcd21f6d157b9073.png",
-    "static/media/playstore.png": "/static/media/playstore.82b4831979e0ce7c733e.png",
-    "static/media/Appstore.png": "/static/media/Appstore.d0c5839937e3c36285f6.png",
-    "index.html": "/index.html",
-    "main.8250132d.css.map": "/static/css/main.8250132d.css.map",
-    "main.64dcbb6b.js.map": "/static/js/main.64dcbb6b.js.map"
+    "main.css": "/shoppingo/static/css/main.0ae0fd6e.css",
+    "main.js": "/shoppingo/static/js/main.73db5dda.js",
+    "static/media/cover.jfif": "/shoppingo/static/media/cover.e2edeab17643ab2951c0.jfif",
+    "static/media/Profile.png": "/shoppingo/static/media/Profile.697fdcd21f6d157b9073.png",
+    "static/media/playstore.png": "/shoppingo/static/media/playstore.82b4831979e0ce7c733e.png",
+    "static/media/Appstore.png": "/shoppingo/static/media/Appstore.d0c5839937e3c36285f6.png",
+    "index.html": "/shoppingo/index.html",
+    "main.0ae0fd6e.css.map": "/shoppingo/static/css/main.0ae0fd6e.css.map",
+    "main.73db5dda.js.map": "/shoppingo/static/js/main.73db5dda.js.map"
   },
   "entrypoints": [
-    "static/css/main.8250132d.css",
-    "static/js/main.64dcbb6b.js"
+    "static/css/main.0ae0fd6e.css",
+    "static/js/main.73db5dda.js"
   ]
 }
