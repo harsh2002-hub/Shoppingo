@@ -12,6 +12,7 @@ export const getProduct =(keyword="",currentPage=1,price=[0,10000],category,rati
     try {
       dispatch({ type: ALL_PRODUCT_REQUEST });
 
+       console.log("helo");
       // let link = `http://localhost:4000/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&rating[gte]=${ratings}`;
     
       let link = `https://shoppingo-backend-vercel-cptjl2w03-harsh2002-hub.vercel.app/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&rating[gte]=${ratings}`;
