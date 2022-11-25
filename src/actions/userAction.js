@@ -46,7 +46,7 @@ import {
       const config = { headers: { "Content-Type": "application/json"}, "withCredentials": true };
       const { data } = await axios.post(
         // "http://localhost:4000/api/v1/login"  -- main,
-         "https://ecommerce-server-vercel-lgvq7k172-parasnayakjain.vercel.app/api/v1/login",
+         "https://shoppingo-backend-vercel-cptjl2w03-harsh2002-hub.vercel.app/api/v1/login",
         // "https://serverofecommercer.herokuapp.com/api/v1/login",
         { email, password },
         config,
@@ -68,7 +68,7 @@ export const register = (userData) => async (dispatch) => {
       const config = { headers: { "Content-Type": "multipart/form-data"},"withCredentials": true  };
   
       // const { data } = await axios.post(`http://localhost:4000/api/v1/register`, userData, config);
-      const { data } = await axios.post(`https://ecommerce-server-vercel-lgvq7k172-parasnayakjain.vercel.app/api/v1/register`, userData, config);
+      const { data } = await axios.post(`https://shoppingo-backend-vercel-cptjl2w03-harsh2002-hub.vercel.app/api/v1/register`, userData, config);
       //  const {data} =await axios.post("https://serverofecommercer.herokuapp.com/api/v1/registerUser",userData,config);
       dispatch({ type: REGISTER_USER_SUCCESS, payload: data.user });
     } catch (error) {
@@ -85,7 +85,7 @@ export const loadUser = () => async (dispatch) => {
     dispatch({ type: LOAD_USER_REQUEST });
 
     // const { data } = await axios.get("http://localhost:4000/api/v1/me",{"withCredentials": true});
-    const { data } = await axios.get("https://ecommerce-server-vercel-lgvq7k172-parasnayakjain.vercel.app/api/v1/me",{"withCredentials": true});
+    const { data } = await axios.get("https://shoppingo-backend-vercel-cptjl2w03-harsh2002-hub.vercel.app/api/v1/me",{"withCredentials": true});
     // const {data}=await axios.get("https://serverofecommercer.herokuapp.com/api/v1/user",{"withCredentials": true});
     console.log(data);
     dispatch({ type: LOAD_USER_SUCCESS, payload: data.user });
@@ -97,7 +97,7 @@ export const loadUser = () => async (dispatch) => {
 export const logout = () => async (dispatch) => {
   try {
     // await axios.get("http://localhost:4000/api/v1/logout",{"withCredentials": true});
-    await axios.get("https://ecommerce-server-vercel-lgvq7k172-parasnayakjain.vercel.app/api/v1/logout",{"withCredentials": true});
+    await axios.get("https://shoppingo-backend-vercel-cptjl2w03-harsh2002-hub.vercel.app/api/v1/logout",{"withCredentials": true});
     // await axios.get("https://serverofecommercer.herokuapp.com/api/v1/logout",{"withCredentials": true});
     dispatch({ type: LOGOUT_SUCCESS });
   } catch (error) {
