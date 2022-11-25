@@ -9,6 +9,7 @@ import Loader from '../layout/Loader/Loader'
 import { useAlert } from "react-alert";
 const Home = () => {
 
+  console.log("Home par hun000");
   const alert = useAlert();
   const dispatch = useDispatch();
   const { loading, error, products } = useSelector((state) => state.products);
